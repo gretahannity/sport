@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Not Found - Redirecting...</title>
+    <script>
+        // Check if the user is trying to access an old /join/ link
+        if (window.location.pathname.includes('/join/')) {
+            // Redirect them to the new consolidated join page
+            window.location.replace("https://sportan.com/join.html");
+        } else {
+            // Otherwise, send them home after 3 seconds
+            setTimeout(function(){
+                window.location.replace("https://sportan.com/index.html");
+            }, 3000);
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting you to the right page...</p>
+</body>
+</html>
